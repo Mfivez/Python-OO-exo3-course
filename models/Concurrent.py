@@ -8,6 +8,7 @@ class Concurrent:
         self.__voiture = voiture
         self.__temps = list()   # secondes
 
+    # region PROPERTIES
     @property
     def nom(self):
         return self.__nom
@@ -44,6 +45,7 @@ class Concurrent:
     def temps_total(self):
         return sum(self.__temps)
 
+    #endregion
 
     def realiser_tour(self, circuit):
 

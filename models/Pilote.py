@@ -9,6 +9,7 @@ class Pilote:
         self.__date_naissance = date_naissance
         self.__exp = exp  # 0 - 100
 
+    # region PROPERTIES
     @property
     def prenom(self):
         return self.__prenom
@@ -40,6 +41,8 @@ class Pilote:
     @property
     def exp(self):
         return self.__exp
+
+    # endregion
 
     def gagner_exp(self, value):
         if value < 0:

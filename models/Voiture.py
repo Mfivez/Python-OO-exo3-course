@@ -9,6 +9,7 @@ class Voiture:
         self.__vit_min = vit_min
         self.__vit_max = vit_max
 
+    #region PROPERTIES
     @property
     def marque(self):
         return self.__marque
@@ -29,9 +30,11 @@ class Voiture:
     def vit_max(self):
         return self.__vit_max
 
+
     @vit_max.setter
     def vit_max(self, value):
         self.__vit_max = value
+    #endregion
 
     def obtenir_vitesse(self):
         return random.randint(self.vit_min, self.vit_max)
